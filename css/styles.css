@@ -627,12 +627,6 @@ img {
   margin-right: 10px;
 }
 
-/*
-.footer-label {
-  display: flex;
-  flex-direction: column;
-}
-*/
 .footer-text {
   margin-bottom: 20px;
 }
@@ -908,6 +902,18 @@ img {
   cursor: pointer;
 }
 
+.modal-btn-icon {
+  transition: fill var(--animation);
+}
+
+.modal-btn-icon:hover {
+  fill: #188ce8;
+}
+
+.modal-btn-icon:focus {
+  fill: #188ce8;
+}
+
 /**
   |============================
   | Modal form
@@ -948,6 +954,7 @@ img {
   display: block;
   text-align: left;
   margin-bottom: 12px;
+  color: #757575;
 }
 .register-form-input,
 .register-form-message {
@@ -955,8 +962,10 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  padding: 12px;
-  padding-left: 42px;
+  padding-top: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
 
   outline: transparent;
   cursor: pointer;
@@ -986,8 +995,9 @@ img {
 
 .register-form-icon {
   position: absolute;
-  bottom: 12px;
-  left: 15px;
+  bottom: 18px;
+  left: 18px;
+
   transition: fill var(--animation);
 }
 .register-form-agreement {
@@ -997,7 +1007,12 @@ img {
   gap: 7px;
   margin-bottom: 30px;
 }
-
+/*
+.register-form-agreement:focus-within {
+  box-shadow: 0 0 0 2px black;
+  border-radius: 2px;
+}
+*/
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
   transition: opacity var(--animation);
