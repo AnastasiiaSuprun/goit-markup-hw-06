@@ -627,10 +627,12 @@ img {
   margin-right: 10px;
 }
 
+/*
 .footer-label {
   display: flex;
   flex-direction: column;
 }
+*/
 .footer-text {
   margin-bottom: 20px;
 }
