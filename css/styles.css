@@ -876,7 +876,7 @@ img {
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   padding: 50px 30px;
   background: #ffffff;
   border-radius: 4px;
@@ -1056,6 +1056,7 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   padding: 10px 52px;
+  margin-bottom: 40px;
 
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
