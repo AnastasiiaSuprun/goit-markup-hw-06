@@ -906,10 +906,7 @@ img {
   transition: fill var(--animation);
 }
 
-.modal-btn-icon:hover {
-  fill: #188ce8;
-}
-
+.modal-btn-icon:hover,
 .modal-btn-icon:focus {
   fill: #188ce8;
 }
@@ -1004,15 +1001,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 8px;
   margin-bottom: 30px;
 }
-/*
-.register-form-agreement:focus-within {
-  box-shadow: 0 0 0 2px black;
-  border-radius: 2px;
+.register-form-agreement-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  user-select: none;
+  text-underline-position: under;
 }
-*/
+
+.register-form-agreement-link {
+  color: var(--link-txt-cl);
+}
+
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
   transition: opacity var(--animation);
@@ -1026,19 +1031,9 @@ img {
 .register-checkbox:checked + .register-icon .register-icon-check {
   opacity: 1;
 }
-
-.register-form-agreement-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
-
-  user-select: none;
-  text-underline-position: under;
-}
-
-.register-form-agreement-link {
-  color: var(--link-txt-cl);
+.register-form-agreement:focus-within {
+  box-shadow: 0 0 0 2px black;
+  border-radius: 2px;
 }
 
 .register-form-btn {
