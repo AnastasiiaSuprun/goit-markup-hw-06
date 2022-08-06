@@ -857,6 +857,7 @@ img {
 
   width: 100%;
   height: 100%;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -875,8 +876,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
-  width: 528px;
-  min-height: 581px;
+  width: 530px;
+  min-height: 580px;
   padding: 50px 30px;
   background: #ffffff;
   border-radius: 4px;
@@ -903,13 +904,9 @@ img {
   transition: fill var(--animation);
 }
 
-.modal-btn-icon {
-  transition: fill var(--animation);
-}
-
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
-  fill: #188ce8;
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--link-txt-cl);
 }
 
 /**
@@ -1008,7 +1005,7 @@ textarea::placeholder {
 .register-form-icon {
   position: absolute;
   bottom: 14px;
-  left: 14px;
+  left: 12px;
 
   transition: fill var(--animation);
 }
@@ -1046,7 +1043,8 @@ textarea::placeholder {
 .register-checkbox:checked + .register-icon .register-icon-check {
   opacity: 1;
 }
-.register-form-agreement:focus-within {
+
+.register-form-agreement:focus-within > .register-icon {
   box-shadow: 0 0 0 2px black;
   border-radius: 2px;
 }
